@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Jun 24 14:59:11 EDT 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-016b-8adb-39b9-00000ef974a8 
+on database directory memory:/Users/kirthisamson/Dropbox/Important/Jobs/BravoLT/reservation/testdb with class loader sun.misc.Launcher$AppClassLoader@58644d46 
+Loaded from file:/Users/kirthisamson/.gradle/caches/modules-2/files-2.1/org.apache.derby/derby/10.14.2.0/7efad40ef52fbb1f08142f07a83b42d29e47d8ce/derby-10.14.2.0.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_31-b13
+user.dir=/Users/kirthisamson/Dropbox/Important/Jobs/BravoLT/reservation
+os.name=Mac OS X
+os.arch=x86_64
+os.version=10.14.5
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''

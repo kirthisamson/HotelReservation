@@ -1,0 +1,36 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.6.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.hotel'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	runtimeOnly 'org.apache.derby:derby'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testCompile "org.mockito:mockito-core:2.+"
+//	testCompile "org.powermock:powermock-module-junit4:2.+"
+//	testCompile "org.powermock:powermock-api-mockito2"
+
+	testCompile group: 'org.powermock', name: 'powermock-api-mockito2', version: '2.0.0-beta.5'
+	testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '2.0.2'
+	//testCompile group: 'org.powermock', name: 'powermock-mockito-release-full', version: '1.5.4', ext: 'pom'
+}
